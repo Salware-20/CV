@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #000083;
+  --secondary-color: #4a6cf7;
+  --accent-color: #ffd700;
+  --font-family: "funnel sans", sans-serif;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.5s ease;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.barr_nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  font-family: var(--font-family);
+  width: 100%;
+}
+
+.barr_nav span {
+  color: var(--secondary-color);
+}
+
+.barr_nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.barr_nav ul li a {
+  text-decoration: none;
+  color: #525252;
+  transition: var(--transition);
+  position: relative;
+}
+
+.ref:hover {
+  color: black;
+}
+
+.ref:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.ref:after {
+  content: "";
+  bottom: -2px;
+  left: 0%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: var(--transition);
+}
+
+.Inicio {
+  text-align: center;
+  font-family: var(--font-family);
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color) 0%,
+    #1c3177 50%,
+    var(--primary-color)
+  );
+  color: white;
+  padding-top: 1.2rem;
+  height: 33vh;
+  border: 1px solid black;
+}
+
+.Inicio h1 {
+  font-size: 3rem;
+}
+
+.Inicio pre {
+  font-size: 1rem;
+}
+
+.botones_cv {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.Ver_p {
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.Ver_p:hover {
+  transform: translateY(-2px);
+  background: inherit;
+  border: var(--secondary-color) 2px solid;
+  color: var(--secondary-color);
+}
+
+.Descargar_CV {
+  border: none;
+  background-color: inherit;
+  color: var(--secondary-color);
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  border: var(--secondary-color) 2px solid;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.Descargar_CV:hover {
+  transform: translateY(-2px);
+  background-color: var(--secondary-color);
+  border: none;
+  color: white;
+}
