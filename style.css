@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--altura);
+}
 body {
   box-sizing: border-box;
   padding: 0;
@@ -13,6 +17,7 @@ body {
   --font-family: "funnel sans", sans-serif;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --transition: all 0.5s ease;
+  --altura: 12rem;
 }
 
 header {
@@ -235,34 +240,40 @@ nav {
   height: max-content;
 }
 
-.h-text-box {
+.h-text-box,
+.p-text-box {
   width: max-content;
   margin: 0 auto;
   padding-bottom: 2rem;
 }
 
-.h-text {
+.h-text,
+.p-text {
   font-family: var(--font-family);
   position: relative;
   letter-spacing: 0.1rem;
 }
 
-.h-text:after {
+.h-text:after,
+.p-text:after {
   content: "";
   position: absolute;
   width: 70%;
   height: 3px;
   background-color: var(--accent-color);
-  bottom: -3px;
+  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.skills-flex {
+.skills-flex,
+.project-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .skill-card {
@@ -272,7 +283,7 @@ nav {
   border-radius: 1rem;
   box-shadow: var(--shadow);
   transition: var(--transition);
-  padding: 2rem;
+  flex-wrap: wrap;
 }
 
 .skill-icon {
@@ -280,9 +291,11 @@ nav {
   color: var(--secondary-color);
   margin-bottom: 1rem;
   transition: var(--transition);
+  padding: 2rem 2rem 0 2rem;
 }
 
-.skill-title {
+.skill-title,
+.project-title {
   font-family: var(--font-family);
   font-size: 1.5rem;
 }
@@ -290,10 +303,72 @@ nav {
 .skill-description {
   font-family: var(--font-family);
   text-align: center;
+  padding: 0 1.5rem;
 }
 
 .skill-card:hover {
   .skill-icon {
     color: var(--accent-color);
   }
+}
+
+.mis-proyectos {
+  padding: 4rem 0;
+  text-align: center;
+  height: max-content;
+}
+
+.project-card {
+  background-color: white;
+  width: 330px;
+  height: 460px;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  text-align: start;
+}
+
+.img-project img {
+  width: 100%;
+  height: 200px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.project-title,
+.project-description {
+  text-align: start;
+  margin-left: 1rem;
+  font-family: var(--font-family);
+}
+
+.btn-details {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 1.1rem 2rem;
+  border-radius: calc(100px / 2);
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  transition: var(--transition);
+  position: relative;
+}
+
+.btn-details:hover {
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.btn-details:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.btn-details:after {
+  content: "";
+  height: 5px;
+  width: 0%;
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  transition: var(--transition);
 }
