@@ -13,10 +13,7 @@
     <title>CV</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
   <body>
@@ -72,8 +69,12 @@ Creando experiencias digitales modernas con <code>HTML5</code>, <code>CSS3</code
 Especializado en desarrollo web responsive y aplicaciones interactivas</pre
         >
         <div class="botones_cv">
-          <a href=""><button class="Ver_p">VER PROYECTOS</button></a>
-          <a href=""><button class="Descargar_CV">DESCARGAR CV</button></a>
+          <a href="#Proyectos"><button class="Ver_p">VER PROYECTOS</button></a>
+          <a
+            href="CV-download/CV.pdf"
+            download="CV.pdf"
+            ><button class="Descargar_CV">DESCARGAR CV</button></a
+          >
         </div>
       </section>
       <section class="sobre-mi">
@@ -84,25 +85,26 @@ Especializado en desarrollo web responsive y aplicaciones interactivas</pre
           class="grid-sobre-mi"
           id="sobre-mi"
         >
-          <div class="inf-s">
+          <article class="inf-s">
             <p class="inf-s-name"><strong>Hola, soy Andrés</strong></p>
             <p>
-              Soy un desarollador frontend apasionado por crear experiencias web
-              excepcionales. con más de 3 años de experiencia me especializo en
-              convertir ideas complejas en interfaces intuitivas y atractivas.
+              Soy un desarrollador front-end apasionado por crear experiencias
+              web excepcionales. Con más de 3 años de experiencia me especializo
+              en convertir ideas complejas en interfaces intuitivas y
+              atractivas.
             </p>
             <p>
-              Mi enfoque se concentra en escirbir codigo limpio, eficiente y
-              mantenible, soempre buscando las mejores prácticas y las ultimas
-              tecnologias del sector.
+              Mi enfoque se concentra en escribir código limpio y eficiente.
+              Mantenible, siempre buscando las mejores prácticas y las últimas
+              tecnologías del sector.
             </p>
             <p>
-              Cuando no estoy codificando, me gusta aprender nuevas tecnologias,
-              contribuir a proyectos de codigo abierto y mantenerme actualizado
+              Cuando no estoy codificando, me gusta aprender nuevas tecnologías.
+              Contribuir a proyectos de código abierto y mantenerme actualizado
               con las tendencias del desarrollo web.
             </p>
             <a href="#"><button class="btn-contacto">Contáctame</button></a>
-          </div>
+          </article>
           <div class="inf-img">
             <img
               src="img/Me.png"
@@ -212,6 +214,84 @@ Especializado en desarrollo web responsive y aplicaciones interactivas</pre
           </div>
         </div>
       </section>
+      <footer
+        class="Contacto"
+        id="Contactos"
+      >
+        <div class="c-text-box"><h2 class="c-text">Contacto</h2></div>
+        <div class="contact-flex">
+          <div class="contact-info">
+            <div class="email">
+              <h4>Email</h4>
+              <i class="fa-solid fa-envelope"></i> maringuzman20a@gmail.com
+            </div>
+            <div class="tel">
+              <h4>Teléfono</h4>
+              <i class="fa-solid fa-phone"></i> +506 61321206
+            </div>
+            <div class="location">
+              <h4>Ubicación</h4>
+              <i class="fa-solid fa-location-dot"></i> Alajuela, Costa Rica
+            </div>
+          </div>
+          <div class="contact-form">
+            <form>
+              <label>Nombre</label>
+              <input
+                type="text"
+                name="u-name"
+                id="u-name"
+                placeholder="Andrés Marín guzmán"
+                required
+              />
+              <label>Email</label>
+              <input
+                type="email"
+                name="u-email"
+                id="u-email"
+                placeholder="example@gmail.com"
+                required
+              />
+              <label>Mensaje</label>
+              <textarea
+                name="message"
+                id="u-message"
+                required
+                maxlength="250"
+              ></textarea>
+              <input
+                type="submit"
+                value="ENVIAR MENSAJE"
+                id="btn-form"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/andr%C3%A9s-mar%C3%ADn-guzman-b415042b7/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i></a
+          ><a
+            href="https://github.com/Salware-20"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i></a
+          ><a
+            href="https://www.facebook.com/Salandriu/"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i></a
+          ><a
+            href="https://www.instagram.com/sala.and/"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <div class="important">
+          <p class="footer-copy">
+            © 2025 Mi portafolio. Todo los derechos reservados.
+          </p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
