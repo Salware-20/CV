@@ -17,57 +17,62 @@
     />
   </head>
   <body>
-    <header id="inicio">
-      <nav>
-        <div class="barr_nav">
-          <h2>MI<span>Portafolio</span></h2>
-          <ul>
-            <li>
-              <a
-                class="ref"
-                href="#"
-                >Inicio</a
-              >
-            </li>
-            <li>
-              <a
-                class="ref"
-                href="#sobre-mi"
-                >Sobre mí</a
-              >
-            </li>
-            <li>
-              <a
-                class="ref"
-                href="#Habilidades"
-                >Habilidades</a
-              >
-            </li>
-            <li>
-              <a
-                class="ref"
-                href="#Proyectos"
-                >Proyectos</a
-              >
-            </li>
-            <li>
-              <a
-                class="ref"
-                href="#Contactos"
-                >Contactos</a
-              >
-            </li>
-          </ul>
-        </div>
+    <header class="header">
+      <a
+        href="#Inicio"
+        class="nav-titile"
+        >MI<span>Portafolio</span></a
+      >
+      <input
+        type="checkbox"
+        class="menu-toggle"
+        id="menu-toggle"
+      />
+      <label
+        for="menu-toggle"
+        class="icon-menu"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <nav class="bar-nav">
+        <a
+          href="#Inicio"
+          class="Links-ref"
+          >Inicio</a
+        >
+        <a
+          href="#sobre-mi"
+          class="Links-ref"
+          >Sobre mí</a
+        >
+        <a
+          href="#Habilidades"
+          class="Links-ref"
+          >Habilidades</a
+        >
+        <a
+          href="#Proyectos"
+          class="Links-ref"
+          >Proyectos</a
+        >
+        <a
+          href="#Contactos"
+          class="Links-ref"
+          >Contacto</a
+        >
       </nav>
     </header>
     <main>
-      <section class="Inicio">
+      <section
+        class="Inicio"
+        id="Inicio"
+      >
         <h1>Desarrollador Web Frontend</h1>
-        <pre>
-Creando experiencias digitales modernas con <code>HTML5</code>, <code>CSS3</code> y <code>JavaScript.</code>
-Especializado en desarrollo web responsive y aplicaciones interactivas</pre
-        >
+        <p>
+          Creando experiencias digitales modernas con <code>HTML5</code>,
+          <code>CSS3</code> y <code>JavaScript.</code> Especializado en
+          desarrollo web responsive y aplicaciones interactivas
+        </p>
         <div class="botones_cv">
           <a href="#Proyectos"><button class="Ver_p">VER PROYECTOS</button></a>
           <a
@@ -103,7 +108,9 @@ Especializado en desarrollo web responsive y aplicaciones interactivas</pre
               Contribuir a proyectos de código abierto y mantenerme actualizado
               con las tendencias del desarrollo web.
             </p>
-            <a href="#"><button class="btn-contacto">Contáctame</button></a>
+            <a href="#Contactos"
+              ><button class="btn-contacto">Contáctame</button></a
+            >
           </article>
           <div class="inf-img">
             <img
