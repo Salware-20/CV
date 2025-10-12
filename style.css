@@ -43,6 +43,7 @@ body {
   span {
     color: var(--secondary-color);
   }
+  margin-left: 1rem;
 }
 
 .bar-nav a {
@@ -52,6 +53,7 @@ body {
   font-weight: 200;
   margin-left: 1.8rem;
   position: relative;
+  margin-right: 1rem;
 }
 
 .Links-ref:after {
@@ -387,7 +389,7 @@ body {
   width: 100%;
   color: white;
   font-family: var(--font-family);
-  padding: 3rem 1rem;
+  padding: 3rem 0;
   padding-bottom: 0.1rem;
 }
 
