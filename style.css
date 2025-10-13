@@ -32,7 +32,6 @@ body {
   align-items: center;
   font-family: var(--font-family);
   justify-content: space-between;
-  position: relative;
 }
 
 .nav-titile {
@@ -92,12 +91,7 @@ body {
   text-align: center;
   font-family: var(--font-family);
   width: 100%;
-  background: linear-gradient(
-    135deg,
-    var(--secondary-color) 0%,
-    #1c3177 50%,
-    var(--primary-color)
-  );
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #1c3177 50%, var(--primary-color));
   color: white;
   padding-top: 1.2rem;
   height: 33vh;
@@ -129,6 +123,7 @@ body {
   font-weight: bold;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .Ver_p:hover {
@@ -149,6 +144,7 @@ body {
   font-weight: bold;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .Descargar_CV:hover {
@@ -227,6 +223,7 @@ body {
   transition: var(--transition);
   cursor: pointer;
   letter-spacing: 0.2rem;
+  text-decoration: none;
 }
 
 .inf-img img {
@@ -361,6 +358,8 @@ body {
   margin-top: 1.5rem;
   transition: var(--transition);
   position: relative;
+  text-decoration: none;
+  font-family: var(--font-family);
 }
 
 .btn-details:hover {
@@ -515,10 +514,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header {
-    position: relative;
-  }
-
   .bar-nav {
     display: none;
     position: absolute;
@@ -546,7 +541,7 @@ body {
   }
 
   .header {
-    position: relative;
+    position: sticky;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
